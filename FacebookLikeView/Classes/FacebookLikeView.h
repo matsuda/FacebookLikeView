@@ -29,7 +29,7 @@
 // Specifies whether to display profile photos below the button ('standard' layout only)
 @property (assign) BOOL showFaces;
 
-// The verb to display on the button. Options: 'like', 'recommend' 
+// The verb to display on the button. Options: 'like', 'recommend'
 @property (retain) NSString *action;
 
 // The font to display in the button. Options: 'arial', 'lucida grande', 'segoe ui', 'tahoma', 'trebuchet ms', 'verdana'
@@ -57,7 +57,7 @@
 
 @optional
 
-// Called when the web view finishes rendering its XFBML content 
+// Called when the web view finishes rendering its XFBML content
 - (void)facebookLikeViewDidRender:(FacebookLikeView *)aFacebookLikeView;
 
 // Called when the web view made a failed request or is redirected away from facebook.com

@@ -6,7 +6,7 @@
             .fb_edge_comment_widget { display: none !important; }
         </style>
     </head>
-    <body>                   
+    <body>
         <div id='fb-root'></div>
         <script src='http://connect.facebook.net/en_US/all.js#xfbml=1'></script>
         <script>
@@ -14,7 +14,7 @@
                 var iframe = document.createElement('iframe');
                 iframe.setAttribute('src', 'event:' + name);
                 document.documentElement.appendChild(iframe);
-                iframe.parentNode.removeChild(iframe);  
+                iframe.parentNode.removeChild(iframe);
             };
             function beginForwardingEvent(name) {
                 FB.Event.subscribe(name, function(r) { forwardEvent(name); });
@@ -25,14 +25,14 @@
                 }
             };
             beginForwardingEvents(['edge.create', 'edge.remove', 'xfbml.render']);
-        </script>                                                                                   
-        <fb:like    href='%@' 
-                    send='false' 
-                    layout='%@' 
-                    width='%.0f' 
-                    show_faces='%@' 
-                    action='%@' 
-                    colorscheme='%@' 
+        </script>
+        <fb:like    href='%@'
+                    send='false'
+                    layout='%@'
+                    width='%.0f'
+                    show_faces='%@'
+                    action='%@'
+                    colorscheme='%@'
                     font='%@'
                     ></fb:like>
     </body>
