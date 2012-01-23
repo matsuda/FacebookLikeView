@@ -6,6 +6,7 @@
 //  Copyright 2010 Tom Brow. All rights reserved.
 //
 
+#import <objc/message.h>
 #import "Facebook.h"
 
 @implementation Facebook(ForceDialog)
